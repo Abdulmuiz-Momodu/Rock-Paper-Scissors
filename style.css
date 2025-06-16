@@ -1,108 +1,125 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 body {
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  font-family: "Courier New", Courier, monospace;
 }
-
 .container {
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column;
-    padding: 4rem;
-    text-transform: uppercase;
-    gap: 5rem;
-    height: 100%;
-    min-height: 100vh;
-    width: fit-content;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  text-transform: uppercase;
+  gap: 5rem;
+  height: 100%;
+  width: fit-content;
 }
-
 main button {
-    height: 8rem;
-    width: 8rem;
-    border-radius: 50%;
-    border: 3px solid;
-    border-color: yellow;
-    border-block-color: black;
-    cursor: pointer;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: yellow;
+  border-block-color: black;
+  cursor: pointer;
 }
-
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
-
 .gamePart {
-    display: flex;
-    gap: 3rem;
-    flex-direction: column;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
 }
-
 main {
-    display: flex;
-    gap: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
-
 #rock {
-    background-image: url(./Images/Rock.jpg);
-    background-position: center;
-    background-size: contain;
+  background-image: url(./Images/Rock.jpg);
+  background-position: center;
+  background-size: contain;
 }
-
 #paper {
-    background-image: url(./Images/Paper.jpg);
-    background-position: center;
-    background-size: contain;
+  background-image: url(./Images/Paper.jpg);
+  background-position: center;
+  background-size: contain;
 }
-
 #scissors {
-    background-image: url(./Images//Scissors.jpg);   
-    background-position: center;
-    background-size: contain;
+  background-image: url(./Images//Scissors.jpg);
+  background-position: center;
+  background-size: contain;
 }
-
 .answer {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-
 .part {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
-
-.part div h2{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.part div h2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-
+.score {
+  display: flex;
+  gap: 1.5rem;
+}
 .answer button {
-    background-color: #000;
-    color: #fff;
-    width: 7rem;
-    height: 2rem;
-    border-radius: 5px;
-    border: none;
+  background-color: #000;
+  color: #fff;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
 }
-
 .answer button:hover {
-    cursor: pointer;
-    background-color: #333;
+  cursor: pointer;
+  background-color: #333;
 }
-
 #summation {
-    font-size: xxx-large;
-    font-weight: 900;
+  font-size: xxx-large;
+  font-weight: 900;
+}
+#myMove img,
+#computerMove img {
+  height: 5rem;
+  width: 5rem;
 }
 
-#myMove img, #computerMove img {
-    height: 5rem;
-    width: 5rem;
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  main button {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .part {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }

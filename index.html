@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rock-Paper-scissors</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DEMO</title>
+  </head>
+  <body>
     <div class="container">
-        <h1>Rock-Paper-scissors</h1>
+      <h1>Rock-Paper-scissors</h1>
 
-        <div class="gamePart">
-            <main>
+      <div class="gamePart">
+        <main>
+          <button
+            id="rock"
+            onclick="playGame('rock')"
+          ></button>
+          <button
+            id="paper"
+            onclick="playGame('paper')"
+          ></button>
+          <button
+            id="scissors"
+            onclick="playGame('scissors')"
+          ></button>
+        </main>
 
-                <button id="rock" onclick="
-                    playGame('Rock') 
-                "></button>
-                <button id="paper" onclick="
-                    playGame('Paper');
-                "></button>
-                <button id="scissors" onclick="
-                    playGame('Scissors');
-                "></button>
-                
-            </main>
-
-            <div class="answer">
-                <div>
-                    <p id="summation"></p>
-                </div>
-                <div class="part">
-                    <div>
-                        <h2 id="myMove"></h2>
-                    </div>
-                    <div>
-                        <h2 id="computerMove"></h2>
-                    </div>
-                </div>
-                <div class="part">
-                    <div>
-                        <h3>Wins</h3>
-                        <p id="wins"></p>
-                    </div>
-                    <div>
-                        <h3>Losses</h3>
-                        <p id="losses"></p>
-                    </div>
-                    <div>
-                        <h3>Ties</h3>
-                        <p id="ties"></p>
-                    </div>
-                </div>
-                <button id="reset" onclick="
-                    resetScore();
-                "> Reset Score </button>
+        <div class="answer">
+          <div>
+            <p id="summation"></p>
+          </div>
+          <div class="part">
+            <div>
+              <h2 id="myMove"></h2>
             </div>
-
-            <script src="script.js"></script>
+            <div>
+              <h2 id="computerMove"></h2>
+            </div>
+          </div>
+          <div class="score">
+            <div>
+              <h3>Wins</h3>
+              <p id="wins"></p>
+            </div>
+            <div>
+              <h3>Losses</h3>
+              <p id="losses"></p>
+            </div>
+            <div>
+              <h3>Ties</h3>
+              <p id="ties"></p>
+            </div>
+          </div>
+          <button
+            id="reset"
+            onclick="resetScore();"
+          >
+            Reset Score
+          </button>
         </div>
+
+        <script src="script.js"></script>
+      </div>
     </div>
-</body>
+  </body>
 </html>
